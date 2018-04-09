@@ -10,7 +10,7 @@ scalaVersion := "2.12.4"
 
 resolvers += Classpaths.typesafeReleases
 
-mainClass in assembly := Some("com.nhh.app.Main")
+mainClass in assembly := Some("com.nhh.Main")
 
 libraryDependencies ++= Seq(
   "org.scalatra" %% "scalatra" % ScalatraVersion,
