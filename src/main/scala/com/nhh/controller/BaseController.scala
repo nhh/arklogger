@@ -4,7 +4,7 @@ import com.typesafe.scalalogging.Logger
 
 class BaseController extends ApplicationController {
 
-  val logger = Logger(this.getClass.getCanonicalName)
+  val logger = Logger("BaseController")
 
   get("/"){
     logger.info(s"${request.getRemoteHost} - GET /")

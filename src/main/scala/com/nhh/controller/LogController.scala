@@ -4,7 +4,7 @@ import com.typesafe.scalalogging.Logger
 
 class LogController extends ApplicationController {
 
-  val logger = Logger(this.getClass.getCanonicalName)
+  val logger = Logger("LogController")
 
   get("/:serverId") {
     logger.info(s"${params("serverId")} :: ${params("notetitle")} :: ${params("message")}")
